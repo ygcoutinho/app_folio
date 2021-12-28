@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 class CardIconExercises extends StatelessWidget {
-  const CardIconExercises({Key? key}) : super(key: key);
+  final String icon;
+  final String title;
+  final String exercicesQuantity;
+
+  const CardIconExercises({Key? key, required this.icon, required this.title, required this.exercicesQuantity}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,27 +25,27 @@ class CardIconExercises extends StatelessWidget {
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(6.0),
-                  child: Image.asset('lib/assets/images/icons/Icon awesome-running@3x.png'),
+                  child: Image.asset(icon),
                 ),
               ),
             ),
-            const Text(
-              'Animações',
-              style: TextStyle(fontSize: 16),
+            Text(
+              title,
+              style: const TextStyle(fontSize: 16),
             ),
           ],
         ),
         Row(
-          children: const [
-            Text(
+          children: [
+            const Text(
               'Exercícios:',
               style: TextStyle(fontSize: 12, color: Color(0xFF51565A)),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 11, right: 11),
+              padding: const EdgeInsets.only(left: 11, right: 11),
               child: Text(
-                '4',
-                style: TextStyle(fontSize: 12),
+                exercicesQuantity,
+                style: const TextStyle(fontSize: 12),
               ),
             ),
           ],
