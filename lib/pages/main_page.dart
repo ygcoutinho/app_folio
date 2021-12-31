@@ -1,8 +1,8 @@
 import 'package:app_folio/components/AppBar/appbar_content.dart';
+import 'package:app_folio/components/bottomnavbar/bottom_navbar_custom.dart';
 import 'package:app_folio/components/card/card_widget.dart';
 import 'package:app_folio/data/dummy_data.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -26,32 +26,7 @@ class MainPage extends StatelessWidget {
           },
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: const Color(0xFFFFFFFF),
-        items: const [
-          BottomNavigationBarItem(
-            label: 'Atividades',
-            icon: FaIcon(
-              FontAwesomeIcons.bullseye,
-              size: 24,
-            ),
-          ),
-          BottomNavigationBarItem(
-            label: 'Repositórios',
-            icon: FaIcon(
-              FontAwesomeIcons.github,
-              size: 24,
-            ),
-          ),
-          BottomNavigationBarItem(
-            label: 'Sobre o dev',
-            icon: FaIcon(
-              FontAwesomeIcons.userAlt,
-              size: 24,
-            ),
-          ),
-        ],
-      ),
+      bottomNavigationBar: const BottomNavBarCustom(),
     );
   }
 }
