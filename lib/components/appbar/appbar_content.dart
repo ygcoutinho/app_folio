@@ -29,12 +29,14 @@ class AppBarContent extends StatelessWidget {
               ),
             ],
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 148),
-            child: TextButton(
-              onPressed: () {},
-              child: const Icon(Icons.light_mode_rounded),
-              style: TextButton.styleFrom(primary: Colors.white),
+          Expanded(
+            child: Align(
+              alignment: Alignment.centerRight,
+              child: TextButton(
+                onPressed: () {},
+                child: const Icon(Icons.light_mode_rounded),
+                style: TextButton.styleFrom(primary: Colors.white, fixedSize: Size(24, 24)),
+              ),
             ),
           ),
         ],

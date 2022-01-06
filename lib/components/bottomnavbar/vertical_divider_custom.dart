@@ -5,9 +5,9 @@ class VerticalDividerCustom extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return const SizedBox(
       height: 46,
-      child: const VerticalDivider(
+      child: VerticalDivider(
         width: 1,
         thickness: 1,
         color: Colors.grey,

@@ -1,3 +1,4 @@
+import 'package:app_folio/pages/about_dev.dart';
 import 'package:app_folio/pages/main_page.dart';
 
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      home: const MainPage(),
+      home: const AboutDev(),
     );
   }
 }

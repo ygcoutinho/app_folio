@@ -20,9 +20,12 @@ class BottomNavBarItemCustom extends StatelessWidget {
           onPressed: () {},
           child: icon,
         ),
-        Text(
-          label,
-          style: TextStyle(fontSize: 12),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 10),
+          child: Text(
+            label,
+            style: TextStyle(fontSize: 12),
+          ),
         ),
       ],
     );
