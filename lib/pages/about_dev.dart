@@ -1,3 +1,5 @@
+import 'package:app_folio/components/aboutdev/about_dev_card.dart';
+import 'package:app_folio/components/aboutdev/favorite_tecnologies_scroll.dart';
 import 'package:app_folio/components/appbar/appbar_content.dart';
 import 'package:flutter/material.dart';
 
@@ -16,43 +18,16 @@ class _AboutDevState extends State<AboutDev> {
         preferredSize: Size.fromHeight(100),
         child: AppBarContent(),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(13.0),
-        child: Container(
-          height: 320,
-          width: double.infinity,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(25),
-            color: const Color(0xFF172026),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: const [
+          AboutDevCard(),
+          Padding(
+            padding: EdgeInsets.only(left: 14),
+            child: Text('Tecnogias Favoritas', textAlign: TextAlign.start, style: TextStyle(fontSize: 14)),
           ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              CircleAvatar(
-                child: ClipOval(
-                  child: Image.asset(
-                    'lib/assets/images/profile/foto.jpg',
-                  ),
-                ),
-                radius: 75,
-              ),
-              Text('Yago Coutinho'),
-              Text('Blablablablavblabla\nblalablablavblabla\nblalalalala'),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(Icons.ac_unit),
-                  SizedBox(width: 27),
-                  Icon(Icons.ac_unit),
-                  SizedBox(width: 27),
-                  Icon(Icons.ac_unit),
-                  SizedBox(width: 27),
-                  Icon(Icons.ac_unit),
-                ],
-              )
-            ],
-          ),
-        ),
+          FavoriteTecnologiesScroll(),
+        ],
       ),
     );
   }
