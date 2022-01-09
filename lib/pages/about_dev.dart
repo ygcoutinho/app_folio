@@ -1,6 +1,8 @@
+import 'package:app_folio/components/aboutdev/abilities_and_competences.dart';
 import 'package:app_folio/components/aboutdev/about_dev_card.dart';
 import 'package:app_folio/components/aboutdev/favorite_tecnologies_scroll.dart';
 import 'package:app_folio/components/appbar/appbar_content.dart';
+import 'package:app_folio/components/bottomnavbar/bottom_navbar_custom.dart';
 import 'package:flutter/material.dart';
 
 class AboutDev extends StatefulWidget {
@@ -18,6 +20,7 @@ class _AboutDevState extends State<AboutDev> {
         preferredSize: Size.fromHeight(100),
         child: AppBarContent(),
       ),
+      bottomNavigationBar: BottomNavBarCustom(),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: const [
@@ -27,6 +30,7 @@ class _AboutDevState extends State<AboutDev> {
             child: Text('Tecnogias Favoritas', textAlign: TextAlign.start, style: TextStyle(fontSize: 14)),
           ),
           FavoriteTecnologiesScroll(),
+          AabilitiesAndCompetences(),
         ],
       ),
     );
