@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CardGitButton extends StatelessWidget {
-  const CardGitButton({
-    Key? key,
-  }) : super(key: key);
-
+  const CardGitButton({Key? key, required this.route}) : super(key: key);
+  final String route;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -33,7 +31,7 @@ class CardGitButton extends StatelessWidget {
             ),
           ),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () => Navigator.pushNamed(context, route),
             child: const Padding(
               padding: EdgeInsets.only(left: 33, right: 33),
               child: Text(

@@ -1,6 +1,7 @@
 import 'package:app_folio/components/card/card_git_button.dart';
 import 'package:app_folio/components/card/card_icon_exercises.dart';
 import 'package:app_folio/models/card_model.dart';
+import 'package:app_folio/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class CardWidget extends StatelessWidget {
@@ -31,7 +32,7 @@ class CardWidget extends StatelessWidget {
               style: const TextStyle(fontSize: 16),
             ),
           ),
-          CardGitButton(),
+          CardGitButton(route: AppRoutes.EXERCISES),
         ],
       ),
     );

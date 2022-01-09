@@ -1,4 +1,5 @@
 import 'package:app_folio/pages/about_dev.dart';
+import 'package:app_folio/pages/exercices_page.dart';
 import 'package:app_folio/pages/main_page.dart';
 import 'package:app_folio/routes/app_routes.dart';
 
@@ -18,8 +19,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
       routes: {
-        AppRoutes.HOME: (ctx) => MainPage(),
-        AppRoutes.ABOUT_DEV: (ctx) => AboutDev(),
+        AppRoutes.HOME: (ctx) => const MainPage(),
+        AppRoutes.ABOUT_DEV: (ctx) => const AboutDev(),
+        AppRoutes.EXERCISES: (ctx) => const ExercisesPage(),
       },
     );
   }
