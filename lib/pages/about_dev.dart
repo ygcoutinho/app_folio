@@ -20,7 +20,7 @@ class _AboutDevState extends State<AboutDev> {
         preferredSize: Size.fromHeight(100),
         child: AppBarContent(),
       ),
-      bottomNavigationBar: BottomNavBarCustom(),
+      bottomNavigationBar: const BottomNavBarCustom(),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: const [

@@ -1,5 +1,6 @@
 import 'package:app_folio/components/bottomnavbar/bottom_navbar_item_custom.dart';
 import 'package:app_folio/components/bottomnavbar/vertical_divider_custom.dart';
+import 'package:app_folio/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -11,11 +12,11 @@ class BottomNavBarCustom extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: const [
-        BottomNavBarItemCustom(icon: FaIcon(FontAwesomeIcons.bullseye), label: 'Atividades'),
+        BottomNavBarItemCustom(icon: FaIcon(FontAwesomeIcons.bullseye), label: 'Atividades', route: AppRoutes.HOME),
         VerticalDividerCustom(),
-        BottomNavBarItemCustom(icon: FaIcon(FontAwesomeIcons.github), label: 'Repositórios'),
+        BottomNavBarItemCustom(icon: FaIcon(FontAwesomeIcons.github), label: 'Repositórios', route: AppRoutes.EXERCISES),
         VerticalDividerCustom(),
-        BottomNavBarItemCustom(icon: FaIcon(FontAwesomeIcons.userAlt), label: 'Sobre o dev'),
+        BottomNavBarItemCustom(icon: FaIcon(FontAwesomeIcons.userAlt), label: 'Sobre o Dev', route: AppRoutes.ABOUT_DEV),
       ],
     );
   }
