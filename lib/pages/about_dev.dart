@@ -21,17 +21,19 @@ class _AboutDevState extends State<AboutDev> {
         child: AppBarContent(),
       ),
       bottomNavigationBar: const BottomNavBarCustom(),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: const [
-          AboutDevCard(),
-          Padding(
-            padding: EdgeInsets.only(left: 14),
-            child: Text('Tecnogias Favoritas', textAlign: TextAlign.start, style: TextStyle(fontSize: 14)),
-          ),
-          FavoriteTecnologiesScroll(),
-          AabilitiesAndCompetences(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: const [
+            AboutDevCard(),
+            Padding(
+              padding: EdgeInsets.only(left: 14),
+              child: Text('Tecnogias Favoritas', textAlign: TextAlign.start, style: TextStyle(fontSize: 14)),
+            ),
+            FavoriteTecnologiesScroll(),
+            AabilitiesAndCompetences(),
+          ],
+        ),
       ),
     );
   }

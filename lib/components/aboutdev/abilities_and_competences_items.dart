@@ -20,7 +20,7 @@ class AbilitiesAndCompetencesItems extends StatelessWidget {
                 color: const Color(0xFF0D0E0F),
               ),
               height: 9,
-              width: 255,
+              width: 200,
             ),
             Container(
               decoration: BoxDecoration(

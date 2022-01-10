@@ -19,12 +19,13 @@ class AabilitiesAndCompetences extends StatelessWidget {
           padding: const EdgeInsets.all(15.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: const [
-              AbilitiesAndCompetencesItems(abilitieText: 'JDEdwards', skillLevel: 220),
-              AbilitiesAndCompetencesItems(abilitieText: 'Dart/Flutter', skillLevel: 170),
-              AbilitiesAndCompetencesItems(abilitieText: 'Embromation', skillLevel: 255),
-              AbilitiesAndCompetencesItems(abilitieText: 'HTML 5', skillLevel: 160),
-              AbilitiesAndCompetencesItems(abilitieText: 'CSS 3', skillLevel: 160),
+              AbilitiesAndCompetencesItems(abilitieText: 'JDEdwards', skillLevel: 190),
+              AbilitiesAndCompetencesItems(abilitieText: 'Dart/Flutter', skillLevel: 60),
+              AbilitiesAndCompetencesItems(abilitieText: 'Embromation', skillLevel: 200),
+              AbilitiesAndCompetencesItems(abilitieText: 'HTML 5', skillLevel: 100),
+              AbilitiesAndCompetencesItems(abilitieText: 'CSS 3', skillLevel: 100),
             ],
           ),
         ),

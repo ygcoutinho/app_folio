@@ -26,9 +26,9 @@ class AppFinancas extends StatelessWidget {
           ),
         ],
       ),
-      body: Scaffold(
-        backgroundColor: Colors.black,
-        body: Container(
+      body: SingleChildScrollView(
+        child: Container(
+          color: Colors.black,
           alignment: Alignment.center,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
