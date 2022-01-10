@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.HOME: (ctx) => MainPage(),
         AppRoutes.ABOUT_DEV: (ctx) => const AboutDev(),
-        AppRoutes.ANIMATIONS: (ctx) => const AnimationsPage(),
+        AppRoutes.ANIMATIONS: (ctx) => AnimationsPage(),
         AppRoutes.MOCKUP_READING: (ctx) => const MockupReading(),
         AppRoutes.PLAYGROUND: (ctx) => const PlaygroundPage(),
       },

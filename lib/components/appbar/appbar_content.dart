@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AppBarContent extends StatelessWidget {
   const AppBarContent({Key? key}) : super(key: key);
@@ -34,8 +35,8 @@ class AppBarContent extends StatelessWidget {
               alignment: Alignment.centerRight,
               child: TextButton(
                 onPressed: () {},
-                child: const Icon(Icons.light_mode_rounded),
-                style: TextButton.styleFrom(primary: Colors.white, fixedSize: Size(24, 24)),
+                child: const FaIcon(FontAwesomeIcons.sun),
+                style: TextButton.styleFrom(primary: Colors.white, fixedSize: const Size(24, 24)),
               ),
             ),
           ),
