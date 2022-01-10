@@ -8,4 +8,6 @@ class AppRoutes {
   static const IMPLICIT_ANIMATION_2 = '/implicit-animation-2';
   static const CONTROLLED_ANIMATION_1 = '/controled-animation-1';
   static const CONTROLLED_ANIMATION_2 = '/controled-animation-2';
+  static const MOCKUP_APP_FINANCAS = 'mockup-app-financas';
+  static const MOCKUP_APP_TINDER = 'mockup-app-tinder';
 }
