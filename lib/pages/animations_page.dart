@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class ExercisesPage extends StatelessWidget {
-  const ExercisesPage({Key? key}) : super(key: key);
+class AnimationsPage extends StatelessWidget {
+  const AnimationsPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,16 @@ class ExercisesPage extends StatelessWidget {
             Text('Flutterando Masterclass', style: TextStyle(fontSize: 12)),
           ],
         ),
-        actions: [],
+        actions: [
+          TextButton.icon(
+            onPressed: () {},
+            icon: const FaIcon(
+              FontAwesomeIcons.sun,
+              color: Colors.white,
+            ),
+            label: Text(''),
+          ),
+        ],
       ),
     );
   }

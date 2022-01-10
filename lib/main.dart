@@ -1,6 +1,8 @@
 import 'package:app_folio/pages/about_dev.dart';
-import 'package:app_folio/pages/exercices_page.dart';
+import 'package:app_folio/pages/animations_page.dart';
 import 'package:app_folio/pages/main_page.dart';
+import 'package:app_folio/pages/mockup_reading_page.dart';
+import 'package:app_folio/pages/playground_page.dart';
 import 'package:app_folio/routes/app_routes.dart';
 
 import 'package:flutter/material.dart';
@@ -19,9 +21,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
       routes: {
-        AppRoutes.HOME: (ctx) => const MainPage(),
+        AppRoutes.HOME: (ctx) => MainPage(),
         AppRoutes.ABOUT_DEV: (ctx) => const AboutDev(),
-        AppRoutes.EXERCISES: (ctx) => const ExercisesPage(),
+        AppRoutes.ANIMATIONS: (ctx) => const AnimationsPage(),
+        AppRoutes.MOCKUP_READING: (ctx) => const MockupReading(),
+        AppRoutes.PLAYGROUND: (ctx) => const PlaygroundPage(),
       },
     );
   }

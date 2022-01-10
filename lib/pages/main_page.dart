@@ -2,10 +2,12 @@ import 'package:app_folio/components/AppBar/appbar_content.dart';
 import 'package:app_folio/components/bottomnavbar/bottom_navbar_custom.dart';
 import 'package:app_folio/components/card/card_widget.dart';
 import 'package:app_folio/data/dummy_data.dart';
+import 'package:app_folio/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatelessWidget {
-  const MainPage({Key? key}) : super(key: key);
+  MainPage({Key? key}) : super(key: key);
+  final List<String> cardRoutes = [AppRoutes.ANIMATIONS, AppRoutes.MOCKUP_READING, AppRoutes.PLAYGROUND];
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +23,7 @@ class MainPage extends StatelessWidget {
           itemBuilder: (context, index) {
             return Padding(
               padding: const EdgeInsets.only(bottom: 10),
-              child: CardWidget(cardItems: DUMMY_DATA[index]),
+              child: CardWidget(cardItems: DUMMY_DATA[index], route: cardRoutes[index]),
             );
           },
         ),

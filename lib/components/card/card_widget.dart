@@ -1,13 +1,13 @@
 import 'package:app_folio/components/card/card_git_button.dart';
 import 'package:app_folio/components/card/card_icon_exercises.dart';
 import 'package:app_folio/models/card_model.dart';
-import 'package:app_folio/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class CardWidget extends StatelessWidget {
   CardModel cardItems;
+  String route;
 
-  CardWidget({Key? key, required this.cardItems}) : super(key: key);
+  CardWidget({Key? key, required this.cardItems, required this.route}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class CardWidget extends StatelessWidget {
               style: const TextStyle(fontSize: 16),
             ),
           ),
-          CardGitButton(route: AppRoutes.EXERCISES),
+          CardGitButton(route: route),
         ],
       ),
     );

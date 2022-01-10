@@ -14,7 +14,7 @@ class BottomNavBarCustom extends StatelessWidget {
       children: const [
         BottomNavBarItemCustom(icon: FaIcon(FontAwesomeIcons.bullseye), label: 'Atividades', route: AppRoutes.HOME),
         VerticalDividerCustom(),
-        BottomNavBarItemCustom(icon: FaIcon(FontAwesomeIcons.github), label: 'Repositórios', route: AppRoutes.EXERCISES),
+        BottomNavBarItemCustom(icon: FaIcon(FontAwesomeIcons.github), label: 'Repositórios', route: AppRoutes.ANIMATIONS),
         VerticalDividerCustom(),
         BottomNavBarItemCustom(icon: FaIcon(FontAwesomeIcons.userAlt), label: 'Sobre o Dev', route: AppRoutes.ABOUT_DEV),
       ],
