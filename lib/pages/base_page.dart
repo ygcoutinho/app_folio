@@ -10,7 +10,7 @@ class PlaygroundPage extends StatelessWidget {
       appBar: AppBar(
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
+          children: const [
             Text('Leitura de Mockup', style: TextStyle(fontSize: 20)),
             Text('Flutterando Masterclass', style: TextStyle(fontSize: 12)),
           ],
@@ -22,7 +22,7 @@ class PlaygroundPage extends StatelessWidget {
               FontAwesomeIcons.sun,
               color: Colors.white,
             ),
-            label: Text(''),
+            label: const Text(''),
           ),
         ],
       ),

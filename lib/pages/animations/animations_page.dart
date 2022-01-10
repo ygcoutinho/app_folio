@@ -1,4 +1,5 @@
 import 'package:app_folio/components/animations/animation_item.dart';
+import 'package:app_folio/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -6,10 +7,10 @@ class AnimationsPage extends StatelessWidget {
   AnimationsPage({Key? key}) : super(key: key);
 
   final List<Map<String, String>> items = [
-    {'title': 'Animação Implícita 1', 'route': 'xxx'},
-    {'title': 'Animação Implícita 2', 'route': 'xxx'},
-    {'title': 'Animação Controlada 1', 'route': 'xxx'},
-    {'title': 'Animação Controlada 2', 'route': 'xxx'},
+    {'title': 'Animação Implícita 1', 'route': AppRoutes.IMPLICIT_ANIMATION_1},
+    {'title': 'Animação Implícita 2', 'route': AppRoutes.IMPLICIT_ANIMATION_2},
+    {'title': 'Animação Controlada 1', 'route': AppRoutes.CONTROLLED_ANIMATION_1},
+    {'title': 'Animação Controlada 2', 'route': AppRoutes.CONTROLLED_ANIMATION_2},
   ];
 
   @override

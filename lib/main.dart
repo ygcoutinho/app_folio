@@ -1,5 +1,9 @@
 import 'package:app_folio/pages/about_dev.dart';
-import 'package:app_folio/pages/animations_page.dart';
+import 'package:app_folio/pages/animations/animations_page.dart';
+import 'package:app_folio/pages/animations/controlled_animation_1.dart';
+import 'package:app_folio/pages/animations/controlled_animation_2.dart';
+import 'package:app_folio/pages/animations/implicit_animation_1.dart';
+import 'package:app_folio/pages/animations/implicit_animation_2.dart';
 import 'package:app_folio/pages/main_page.dart';
 import 'package:app_folio/pages/mockup_reading_page.dart';
 import 'package:app_folio/pages/playground_page.dart';
@@ -26,6 +30,10 @@ class MyApp extends StatelessWidget {
         AppRoutes.ANIMATIONS: (ctx) => AnimationsPage(),
         AppRoutes.MOCKUP_READING: (ctx) => const MockupReading(),
         AppRoutes.PLAYGROUND: (ctx) => const PlaygroundPage(),
+        AppRoutes.IMPLICIT_ANIMATION_1: (ctx) => const ImplicitAnimation1(),
+        AppRoutes.IMPLICIT_ANIMATION_2: (ctx) => const ImplicitAnimation2(),
+        AppRoutes.CONTROLLED_ANIMATION_1: (ctx) => const ControlledAnimation1(),
+        AppRoutes.CONTROLLED_ANIMATION_2: (ctx) => const ControlledAnimation2(),
       },
     );
   }

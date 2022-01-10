@@ -21,7 +21,7 @@ class AnimationItem extends StatelessWidget {
                 radius: 25,
                 child: Text(
                   itemNumber,
-                  style: const TextStyle(color: Colors.white, fontSize: 15),
+                  style: const TextStyle(color: Colors.white, fontSize: 20),
                 ),
               ),
               Text(
