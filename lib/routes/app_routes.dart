@@ -11,4 +11,5 @@ class AppRoutes {
   static const MOCKUP_APP_FINANCAS = '/mockup-app-financas';
   static const MOCKUP_APP_TINDER = '/mockup-app-tinder';
   static const REPOSITORIES = '/repositories';
+  static const SPLASH_SCREEN = '/splash-screen';
 }

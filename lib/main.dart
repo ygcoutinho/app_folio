@@ -10,6 +10,7 @@ import 'package:app_folio/pages/mockup/mockup_reading_page.dart';
 import 'package:app_folio/pages/mockup/tinder_clone.dart';
 import 'package:app_folio/pages/playground_page.dart';
 import 'package:app_folio/pages/repositories_page.dart';
+import 'package:app_folio/pages/spash_screen.dart';
 import 'package:app_folio/routes/app_routes.dart';
 
 import 'package:flutter/material.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
       routes: {
-        AppRoutes.HOME: (ctx) => MainPage(),
+        AppRoutes.HOME: (ctx) => SplashScreen(),
         AppRoutes.ABOUT_DEV: (ctx) => const AboutDev(),
         AppRoutes.ANIMATIONS: (ctx) => AnimationsPage(),
         AppRoutes.MOCKUP_READING: (ctx) => MockupReadingPage(),
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.MOCKUP_APP_FINANCAS: (ctx) => const AppFinancas(),
         AppRoutes.MOCKUP_APP_TINDER: (ctx) => const TinderClone(),
         AppRoutes.REPOSITORIES: (ctx) => const RepositoriesPage(),
+        AppRoutes.SPLASH_SCREEN: (ctx) => const SplashScreen(),
       },
     );
   }
