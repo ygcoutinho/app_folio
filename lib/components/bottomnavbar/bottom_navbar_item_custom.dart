@@ -19,7 +19,7 @@ class BottomNavBarItemCustom extends StatelessWidget {
           style: TextButton.styleFrom(
             primary: Colors.white,
           ),
-          onPressed: () => Navigator.pushNamed(context, route),
+          onPressed: () => Navigator.pushReplacementNamed(context, route),
           child: icon,
         ),
         Padding(

@@ -9,6 +9,7 @@ import 'package:app_folio/pages/mockup/app_financas.dart';
 import 'package:app_folio/pages/mockup/mockup_reading_page.dart';
 import 'package:app_folio/pages/mockup/tinder_clone.dart';
 import 'package:app_folio/pages/playground_page.dart';
+import 'package:app_folio/pages/repositories_page.dart';
 import 'package:app_folio/routes/app_routes.dart';
 
 import 'package:flutter/material.dart';
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.CONTROLLED_ANIMATION_2: (ctx) => const ControlledAnimation2(),
         AppRoutes.MOCKUP_APP_FINANCAS: (ctx) => const AppFinancas(),
         AppRoutes.MOCKUP_APP_TINDER: (ctx) => const TinderClone(),
+        AppRoutes.REPOSITORIES: (ctx) => const RepositoriesPage(),
       },
     );
   }
